@@ -9,30 +9,27 @@ console.log(botInput)
     //scisor 2
     if(userInput == botInput){
     console.log("DRAW")
-    document.getElementById("greeting-text").innerText = "DRAW"
     }
    else if (userInput == 0 && botInput == 2){
     console.log("USER WIN")
-    document.getElementById("greeting-text").innerText = "USER WIN (Rock beats Scissor)"
         //rock
         //scissor
    }
     else if (userInput == 1 && botInput == 0){
     console.log("USER WIN")
-    document.getElementById("greeting-text").innerText = "USER WIN (Paper beats Rock)"
 
         //paper
         //rock
     }
     else if (userInput == 2 && botInput == 1 ){
     console.log("USER WIN")
-    document.getElementById("greeting-text").innerText = "USER WIN (Scissor beats Paper)"
         //scissor
         //paper
     }
     else {
-    console.log("BOT WIN")
-    document.getElementById("greeting-text").innerText = "BOT WIN"
-    }
-    
+    console.log("BOT WIN")}
+    Bottext=document.getElementById(botInput)
+    console.log("BOT=",botInput)
+    gtext=document.getElementById("text")
+    gtext.innerText="BOT=" + botInput
 }
